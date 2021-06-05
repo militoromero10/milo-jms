@@ -12,6 +12,8 @@ public class MiloJmsApplication {
     public static void main(String[] args) throws Exception {
 
         //servidor activemq embebido
+        //inicio
+        //volar esto si contamos con un broker **dockerisar un activemq ejemplo**
         ActiveMQServer server = ActiveMQServers.newActiveMQServer(new ConfigurationImpl()
                 .setPersistenceEnabled(false)
                 .setJournalDirectory("target/data/journal")
@@ -19,7 +21,7 @@ public class MiloJmsApplication {
                 .addAcceptorConfiguration("invm", "vm://0"));
 
         server.start();
-
+        //fin
         SpringApplication.run(MiloJmsApplication.class, args);
     }
 
