@@ -29,7 +29,6 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
-
 <!--        usa puerto 8161, 61616-->
         <dependency>
             <groupId>org.apache.activemq</groupId>
@@ -37,7 +36,7 @@
         </dependency>
 
 <!--        inicio, volar si contamos con broker-->
-        <dependency>
+        <!--<dependency>
             <groupId>org.apache.activemq</groupId>
             <artifactId>artemis-jms-server</artifactId>
         </dependency>
@@ -46,7 +45,7 @@
             <artifactId>spring-boot-devtools</artifactId>
             <scope>runtime</scope>
             <optional>true</optional>
-        </dependency>
+        </dependency>-->
 <!--        fin-->
         <dependency>
             <groupId>org.projectlombok</groupId>
